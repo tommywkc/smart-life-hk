@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/MainPage.css';
-import backgroundImage from '../assets/background.jpg';
 
 function MainPage({ onNavigateToChat }) {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -191,7 +190,7 @@ function MainPage({ onNavigateToChat }) {
   };
 
   return (
-    <div className="main-page" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'left top', backgroundSize: '100% 100%' }}>
+    <div className="main-page">
       <div className="main-container">
         <header className="main-header">
           <div className="main-page-header-content">

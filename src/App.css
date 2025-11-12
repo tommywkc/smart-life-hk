@@ -25,9 +25,13 @@
   z-index: 1;
 }
 
-.App.chat-page::before {
+.App.chat-page {
   background: url('./assets/aichatbackground.jpg') no-repeat center center;
   background-size: cover;
+}
+
+.App.chat-page::before {
+  background: transparent;
 }
 
 .app-content {

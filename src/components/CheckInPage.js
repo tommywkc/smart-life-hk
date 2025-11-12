@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/CheckInPage.css';
-import backgroundImage from '../assets/background.jpg';
 
 function CheckInPage() {
   const [currentStreak, setCurrentStreak] = useState(7);
@@ -83,7 +82,7 @@ function CheckInPage() {
   };
 
   return (
-    <div className="checkin-page" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'left top', backgroundSize: '100% 100%' }}>
+    <div className="checkin-page">
       <div className="checkin-header">
         <h1 className="checkin-title">健身房打卡</h1>
         <div className="streak-badge">

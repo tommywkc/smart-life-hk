@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/CommunityPage.css';
-import backgroundImage from '../assets/background.jpg';
 
 function CommunityPage() {
   const [posts, setPosts] = useState([
@@ -64,7 +63,7 @@ function CommunityPage() {
   };
 
   return (
-    <div className="community-page" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'left top', backgroundSize: '100% 100%' }}>
+    <div className="community-page">
       <div className="community-header">
         <h1 className="community-title">社群討論區</h1>
         <button className="new-post-btn">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/OrderPage.css';
-import backgroundImage from '../assets/background.jpg';
 
 function OrderPage() {
   const [selectedMeal, setSelectedMeal] = useState(null);
@@ -42,7 +41,7 @@ function OrderPage() {
   };
 
   return (
-    <div className="order-page" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'left top', backgroundSize: '100% 100%' }}>
+    <div className="order-page">
       <div className="order-header">
         {selectedMeal && (
           <button className="back-button" onClick={resetOrder}>←</button>
